@@ -2,7 +2,7 @@
 
 在Android层通过I2C总线通信来访问一些设备，这里主要是访问EEPROM而写的库。
 
-## [JNI](jni/i2c_data.h)提供I2C Bus和[EEPROM AT24C02](www.atmel.com/Images/doc0180.pdf)通信函数
+## [JNI](jni/i2c_data.h)提供I2C Bus和[EEPROM AT24C02](http://www.atmel.com/Images/doc0180.pdf)通信函数
 
   * 读一串字节：`int i2c_data_read_str (int fd, int addr, int offset, unsigned char *buf, int count);`
   * 读一个字节：`int i2c_data_read_byte (int fd, int addr, int offset, unsigned char *buf);`
